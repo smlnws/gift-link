@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プレゼントを受け取ってください✨</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 100px; background: #fff; color: #333; }
+        .btn { display: inline-block; padding: 18px 35px; background: #ff0050; color: #fff; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.2rem; box-shadow: 0 4px 15px rgba(255,0,80,0.3); transition: 0.3s; }
+        .loader { border: 4px solid #f3f3f3; border-top: 4px solid #ff0050; border-radius: 50%; width: 30px; height: 30px; animation: spin 1s linear infinite; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <p>TikTok Liteを起動しています... 🎁</p>
+    <br><br>
+    <a href="https://lite.tiktok.com/t/ZS91bXeyuRVEj-gqCrx/" id="jump" class="btn">アプリを開いて報酬を受け取る 🚀</a>
+
+    <script>
+        // 設定したURLを取得
+        const url = document.getElementById('jump').href;
+        // ページを開いて0.5秒後に自動でアプリを飛ばす
+        setTimeout(() => {
+            window.location.href = url;
+        }, 500);
+    </script>
+</body>
+</html>
